@@ -9,7 +9,7 @@ const Header = () => {
                 <div className="logo">
                     <a href="/" className="logo-link">
                         <div className="logo-icon">
-                            <img src={logo} alt="VKarmaStacks Logo" style={{ height: '32px', width: 'auto' }} />
+                            <img src={logo} alt="VKarmaStacks Logo" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
                         </div>
                         <span className="logo-text">VKarmaStacks</span>
                     </a>

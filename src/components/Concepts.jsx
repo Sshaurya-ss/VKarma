@@ -15,14 +15,14 @@ const Concepts = () => {
                             {/* ✏️ EDIT WORK ITEM 1 DESCRIPTION BELOW */}
                             <p>A clean, data-dense interface architecture designed for clarity and rapid decision making in financial markets.</p>
                         </div>
-                        <div className="work-image-placeholder">
+                        <div className="mockup-container">
                             {/* ✏️ EDIT WORK ITEM 1 IMAGE PLACEHOLDER TEXT BELOW */}
                             <span className="placeholder-label">UI Mockup Placeholder</span>
                         </div>
                     </div>
                     {/* Work Item 2 */}
                     <div className="work-item reverse">
-                        <div className="work-image-placeholder">
+                        <div className="mockup-container">
                             {/* ✏️ EDIT WORK ITEM 2 IMAGE PLACEHOLDER TEXT BELOW */}
                             <span className="placeholder-label">UI Mockup Placeholder</span>
                         </div>
@@ -41,7 +41,7 @@ const Concepts = () => {
                             {/* ✏️ EDIT WORK ITEM 3 DESCRIPTION BELOW */}
                             <p>Intuitive user management and analytics views that simplify complex workflows for enterprise teams.</p>
                         </div>
-                        <div className="work-image-placeholder">
+                        <div className="mockup-container">
                             {/* ✏️ EDIT WORK ITEM 3 IMAGE PLACEHOLDER TEXT BELOW */}
                             <span className="placeholder-label">UI Mockup Placeholder</span>
                         </div>
