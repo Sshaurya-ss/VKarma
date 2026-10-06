@@ -1,4 +1,7 @@
 import React from 'react';
+import fintechImg from '../images/1st image.jpg';
+import ecommerceImg from '../images/2nd image.jpg';
+import saasImg from '../images/3rd image.jpg';
 
 const Concepts = () => {
     return (
@@ -15,16 +18,52 @@ const Concepts = () => {
                             {/* ✏️ EDIT WORK ITEM 1 DESCRIPTION BELOW */}
                             <p>A clean, data-dense interface architecture designed for clarity and rapid decision making in financial markets.</p>
                         </div>
-                        <div className="mockup-container">
-                            {/* ✏️ EDIT WORK ITEM 1 IMAGE PLACEHOLDER TEXT BELOW */}
-                            <span className="placeholder-label">UI Mockup Placeholder</span>
+                        <div 
+                            className="mockup-container"
+                            style={{
+                                width: '100%',
+                                aspectRatio: '16 / 10',
+                                maxHeight: '320px',
+                                overflow: 'hidden',
+                                borderRadius: '12px'
+                            }}
+                        >
+                            <img 
+                                src={fintechImg} 
+                                alt="Fintech analytics and metrics dashboard preview" 
+                                loading="lazy" 
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    objectPosition: 'center'
+                                }}
+                            />
                         </div>
                     </div>
                     {/* Work Item 2 */}
                     <div className="work-item reverse">
-                        <div className="mockup-container">
-                            {/* ✏️ EDIT WORK ITEM 2 IMAGE PLACEHOLDER TEXT BELOW */}
-                            <span className="placeholder-label">UI Mockup Placeholder</span>
+                        <div 
+                            className="mockup-container"
+                            style={{
+                                width: '100%',
+                                aspectRatio: '16 / 10',
+                                maxHeight: '320px',
+                                overflow: 'hidden',
+                                borderRadius: '12px'
+                            }}
+                        >
+                            <img 
+                                src={ecommerceImg} 
+                                alt="Modern e-commerce shopping experience interface" 
+                                loading="lazy" 
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    objectPosition: 'center'
+                                }}
+                            />
                         </div>
                         <div className="work-text">
                             {/* ✏️ EDIT WORK ITEM 2 TITLE BELOW */}
@@ -41,9 +80,27 @@ const Concepts = () => {
                             {/* ✏️ EDIT WORK ITEM 3 DESCRIPTION BELOW */}
                             <p>Intuitive user management and analytics views that simplify complex workflows for enterprise teams.</p>
                         </div>
-                        <div className="mockup-container">
-                            {/* ✏️ EDIT WORK ITEM 3 IMAGE PLACEHOLDER TEXT BELOW */}
-                            <span className="placeholder-label">UI Mockup Placeholder</span>
+                        <div 
+                            className="mockup-container"
+                            style={{
+                                width: '100%',
+                                aspectRatio: '16 / 10',
+                                maxHeight: '320px',
+                                overflow: 'hidden',
+                                borderRadius: '12px'
+                            }}
+                        >
+                            <img 
+                                src={saasImg} 
+                                alt="Cloud-based SaaS platform workflow interface" 
+                                loading="lazy" 
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    objectPosition: 'center'
+                                }}
+                            />
                         </div>
                     </div>
                 </div>
