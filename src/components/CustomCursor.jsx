@@ -6,7 +6,7 @@ const CustomCursor = () => {
 
     useEffect(() => {
         const handleMouseMove = (e) => {
-            // Offset by 6px to perfectly center the 12x12 square on the pointer
+            // Offset by 6px to perfectly center the 12x12 circle on the pointer
             setPosition({ x: e.clientX - 6, y: e.clientY - 6 });
         };
 
