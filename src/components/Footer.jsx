@@ -1,42 +1,9 @@
 import React from 'react';
 import logo from '../assets/logovks.png';
-import contactVideo from '../Contactuspage.mp4';
 
 const Footer = () => {
     return (
         <>
-            {/* Section 6: Contact */}
-            <section id="contact" className="section contact-section" style={{ position: 'relative', overflow: 'hidden' }}>
-                <video 
-                    src={contactVideo}
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline 
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -2 }}
-                />
-                <div className="video-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(rgba(10, 10, 12, 0.6), rgba(10, 10, 12, 0.8))', zIndex: -1 }}></div>
-                <div className="container contact-container" style={{ position: 'relative', zIndex: 1 }}>
-                    {/* ✏️ EDIT CONTACT SECTION TITLE BELOW */}
-                    <h2 className="section-title" style={{ color: '#FFFFFF' }}>Let's build something beautiful.</h2>
-                    <form className="contact-form">
-                        <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Work Email</label>
-                            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="details">Project Details</label>
-                            <textarea id="details" name="details" rows="5" placeholder="Tell us about your goals..." required></textarea>
-                        </div>
-                        {/* ✏️ EDIT CONTACT BUTTON TEXT BELOW */}
-                        <button type="submit" className="btn btn-primary submit-btn">Start a Project</button>
-                    </form>
-                </div>
-            </section>
 
             {/* Footer */}
             <footer className="footer">

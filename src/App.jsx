@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Expertise from './components/Expertise';
 import Concepts from './components/Concepts';
 import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Expertise />
       <Concepts />
       <Testimonials />
+      <Contact />
       <Footer />
     </>
   );
