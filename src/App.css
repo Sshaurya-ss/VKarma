@@ -250,6 +250,7 @@ video, iframe {
 
 .hero-container {
     max-width: 900px;
+    padding-bottom: 160px; /* Shifts the centered content up significantly */
 }
 
 .hero-title {
