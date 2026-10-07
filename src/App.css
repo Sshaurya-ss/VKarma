@@ -67,6 +67,18 @@ video, iframe {
     margin-left: -9px;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .custom-cursor {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-cursor {
+        display: none !important;
+    }
+}
+
 /* --- Keyframe Animations --- */
 @keyframes fadeUp {
     from {
