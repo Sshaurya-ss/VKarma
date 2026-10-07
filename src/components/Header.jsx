@@ -18,7 +18,6 @@ const Header = () => {
                     {/* ✏️ EDIT NAVIGATION LINKS BELOW */}
                     <a href="#services">Services</a>
                     <a href="#work">Work</a>
-                    <a href="#team">Team</a>
                     <a href="#contact">Contact</a>
                 </nav>
                 <button className="mobile-menu-btn" aria-label="Toggle Menu">

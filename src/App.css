@@ -531,11 +531,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.75rem;
-    background: white;
+    background: transparent !important;
     padding: 3rem;
     border-radius: 16px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    border: none;
+    box-shadow: none;
 }
 
 .form-group {
@@ -547,24 +547,24 @@ body {
 .form-group label {
     font-weight: 500;
     font-size: 0.95rem;
-    color: var(--text-color);
+    color: #FFFFFF !important;
 }
 
 .form-group input,
 .form-group textarea {
     padding: 1rem 1.25rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid #000000 !important;
     border-radius: 6px;
     font-family: var(--font-main);
     font-size: 1rem;
     transition: all 0.2s ease;
-    background-color: var(--light-gray); 
-    color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #FFFFFF !important;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #94A3B8;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .form-group input:focus,
