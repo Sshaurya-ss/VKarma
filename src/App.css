@@ -85,6 +85,9 @@ body {
 .cuberto-row:nth-child(1) { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: 0.1s; }
 .cuberto-row:nth-child(2) { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: 0.2s; }
 .cuberto-row:nth-child(3) { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: 0.3s; }
+.cuberto-row:nth-child(4) { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: 0.4s; }
+.cuberto-row:nth-child(5) { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: 0.5s; }
+.cuberto-row:nth-child(6) { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: 0.6s; }
 
 /* Staggered load for Testimonial cards */
 .testimonial-card:nth-child(1) { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: 0.1s; }
@@ -263,39 +266,56 @@ body {
     color: #FFFFFF;
 }
 
+.services-grid-wrapper {
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
 .cuberto-list {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-top: none;
 }
 
 .cuberto-row {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuberto-row:last-child {
+    border-right: none;
 }
 
 .cuberto-row-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2.5rem 1.5rem;
+    min-height: 220px;
 }
 
 .cuberto-title {
-    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
     font-weight: 800;
     color: #FFFFFF;
     letter-spacing: -0.03em;
     margin: 0;
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    word-break: break-word;
 }
 
 .cuberto-arrow {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #FFFFFF;
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    margin-top: auto;
 }
 
 .cuberto-reveal {
@@ -306,16 +326,15 @@ body {
 
 .cuberto-media-placeholder {
     background-color: transparent;
-    padding: 0 2rem 3rem 2rem;
+    padding: 0 1.5rem 2.5rem 1.5rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .cuberto-desc {
     color: #FFFFFF;
-    font-size: 1.25rem;
+    font-size: 0.95rem;
     line-height: 1.6;
-    max-width: 600px;
     margin: 0;
 }
 
@@ -324,18 +343,17 @@ body {
     background-color: #436954;
 }
 
-.cuberto-row:hover .cuberto-row-content {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+/* Active Dropdown Animations */
+.cuberto-row.active {
+    background-color: #436954;
 }
 
-.cuberto-row:hover .cuberto-arrow {
-    transform: translateX(15px) scale(1.1);
+.cuberto-row.active .cuberto-reveal {
+    max-height: 600px;
 }
 
-.cuberto-row:hover .cuberto-reveal {
-    max-height: 500px;
+.cuberto-row.active .cuberto-arrow {
+    transform: rotate(90deg);
 }
 
 /* Work */
@@ -716,6 +734,46 @@ body {
 
     .contact-form {
         padding: 2rem;
+    }
+
+    .cuberto-list {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cuberto-row {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cuberto-row:last-child {
+        border-bottom: none;
+    }
+
+    .cuberto-row-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: auto;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    .cuberto-title {
+        font-size: 1.5rem;
+    }
+
+    .cuberto-arrow {
+        margin-top: 0;
+    }
+
+    .cuberto-media-placeholder {
+        padding: 0 0 2rem 0;
+    }
+
+    .services-grid-wrapper {
+        padding: 0 1.5rem;
     }
 }
 
