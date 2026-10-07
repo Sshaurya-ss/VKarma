@@ -33,8 +33,8 @@ const Concepts = () => {
                                 alt="Fintech analytics and metrics dashboard preview" 
                                 loading="lazy" 
                                 style={{
-                                    width: '100%',
-                                    height: '100%',
+                                    maxWidth: '100%',
+                                    height: 'auto',
                                     objectFit: 'cover',
                                     objectPosition: 'center'
                                 }}
@@ -58,8 +58,8 @@ const Concepts = () => {
                                 alt="Modern e-commerce shopping experience interface" 
                                 loading="lazy" 
                                 style={{
-                                    width: '100%',
-                                    height: '100%',
+                                    maxWidth: '100%',
+                                    height: 'auto',
                                     objectFit: 'cover',
                                     objectPosition: 'center'
                                 }}
@@ -95,8 +95,8 @@ const Concepts = () => {
                                 alt="Cloud-based SaaS platform workflow interface" 
                                 loading="lazy" 
                                 style={{
-                                    width: '100%',
-                                    height: '100%',
+                                    maxWidth: '100%',
+                                    height: 'auto',
                                     objectFit: 'cover',
                                     objectPosition: 'center'
                                 }}

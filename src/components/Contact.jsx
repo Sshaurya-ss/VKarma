@@ -68,7 +68,7 @@ const Contact = () => {
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Jane Doe"
+                            placeholder="Snehil Shaurya"
                             required
                             style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)', border: '2px solid #000000', color: '#FFFFFF' }}
                         />
@@ -79,7 +79,7 @@ const Contact = () => {
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="jane@company.com"
+                            placeholder="snehilshaurya@vkarmastacks.xyz"
                             required
                             style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)', border: '2px solid #000000', color: '#FFFFFF' }}
                         />
