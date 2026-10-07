@@ -232,7 +232,19 @@ video, iframe {
     border: none;
     color: #000000;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
 }
+
+.mobile-menu-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mobile-dropdown-menu {
+    display: none;
+}
+
 
 /* Hero Section */
 .hero {
@@ -749,8 +761,60 @@ video, iframe {
     }
     
     .mobile-menu-btn {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .mobile-dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        padding: 1rem 1.5rem 1.5rem;
+        z-index: 1001;
+        animation: mobileMenuSlideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .mobile-dropdown-menu a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 600;
+        font-size: 1.15rem;
+        padding: 0.9rem 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+        border-radius: 6px;
+    }
+
+    .mobile-dropdown-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-dropdown-menu a:hover,
+    .mobile-dropdown-menu a:active {
+        color: rgba(0, 0, 0, 0.65);
+        transform: translateX(4px);
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+
+@keyframes mobileMenuSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
     .work-grid {
         gap: 5rem;
